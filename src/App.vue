@@ -1,12 +1,20 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">TODOLIST</router-link> |
+    <router-link to="/about">NOTE</router-link> | 
+    <router-link to="/calculator">CALCULATOR</router-link> | 
+    <router-link to="/music">MUSIC</router-link> | 
+    <router-link to="/find">FIND</router-link>
   </nav>
   <router-view/>
 </template>
 
 <style>
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,7 +24,9 @@
 }
 
 nav {
-  padding: 30px;
+  padding: 50px;
+  background-color: gray;
+  border-bottom: 2px solid wheat;
 }
 
 nav a {
@@ -25,6 +35,9 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: black;
+}
+router-link{
+    background-color: gray;
 }
 </style>
